@@ -14,12 +14,11 @@ const routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
   { path: 'heroe/:id', component: HeroeComponent},
   { path: 'buscar/:termino', component: BuscadorComponent},
-  { path: '**', pathMatch: 'full', redirectTo: 'home'},
-  { path: '**', component: HomeComponent}
+  { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{useHash:true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutesModule {}
