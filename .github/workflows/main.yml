@@ -15,4 +15,4 @@ jobs:
         run: |
           yarn
           yarn build
-          npx netlify-cli deploy --dir=dist/spa --prod
+          npx ng build deploy --dir=dist/spa --prod
